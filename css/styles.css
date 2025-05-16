@@ -219,7 +219,7 @@ header{
 .feature-list{
  display: flex;
  gap: 24px;
- padding: 15;
+ padding: 15px;
  margin: 0;
  list-style: none;
 }
