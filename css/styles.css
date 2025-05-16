@@ -76,6 +76,20 @@ header{
     margin: 0;
     padding: 0;
 }
+.nav-link.current{
+    position: relative;
+    color: #404BBF;
+}
+.nav-link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  width: 100%;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
  .contact-link:hover,
 .contact-link:focus{
     color: #404bbf;
@@ -125,8 +139,8 @@ header{
  element.style{
     display: flex;
  }
-.first-child{
-    background-color: #2E2F42;
+.hero-section{
+    background-color: #2E2F42B2;
     color: white;
     padding: 188px 0;
     display: flex;
@@ -134,11 +148,21 @@ header{
     align-items: center;
     justify-content: center;
     gap: 24px;
+    height: 600px;
+    width: 1146px;
+    position: relative;
+    background-image: linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)), 
+    url('../images/people-office.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #2E2F42B2;
+    text-align: center;  
 }
     main section{
         color: black; 
  }
-  .first-header{
+  .hero-title{
     color: #FFFFFF;
     font-family:'Roboto',sans-serif;
     font-size: 56px;
@@ -176,6 +200,17 @@ header{
 .team-member-card{
     background-color: #FFFFFF;
     gap: 24px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.nav-link,
+.btn,
+.card,
+.team-member-card {
+  transition: 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-info{
     text-align: center;
@@ -184,7 +219,7 @@ header{
 .feature-list{
  display: flex;
  gap: 24px;
- padding: 0;
+ padding: 15;
  margin: 0;
  list-style: none;
 }
@@ -194,6 +229,21 @@ header{
     width: calc((100% - 72px) / 4 );
     box-sizing: border-box;
 } 
+.feature-icon{
+   width: 64px;
+   height: 64px; 
+   fill: #2E2F42;
+}
+.icon-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 8px;
+}
 .feature-title{
     color: #2E2F42;
     font-size:20px;
@@ -203,6 +253,32 @@ header{
     text-transform:capitalize;
     flex-direction:column;
     margin-bottom:8px;
+    width: calc((100% - 72px) / 4 );
+}
+.social-icons {
+  display: flex;
+  justify-content: center; 
+  gap: 16px;               
+  margin-top: 12px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  padding: 8px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+.social-icons svg {
+  fill: rgb(16, 15, 15);
+  height: 40px;
+  
 }
 .feature-text{
     font-family:"Roboto",sans-serif ;
@@ -210,6 +286,7 @@ header{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    align-content: center;
     color: #434455;
 }
 .advantages-section{
@@ -269,7 +346,7 @@ header{
     letter-spacing: 0.02em;
     color: #434455;
     text-align:center;
-}
+}  
 .card-title{
     font-weight: 500;
     font-size: 20px;
@@ -302,6 +379,10 @@ header{
     background-color: #FFFFFF;
     width: calc((100% - 48px) / 3); 
     box-sizing: border-box;
+    transition:box-shadow 0.3s ease-in-out;
+}
+.portfolio-item:hover{
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
 }
 .portfolio-title{
   margin-bottom: 72px;
@@ -315,6 +396,53 @@ header{
     border: 1px solid #e7e9fc;
     border-top: none; 
     
+}
+.portfolio-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(77, 90, 229, 0.9); 
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.portfolio-link:hover .portfolio-overlay,
+.portfolio-link:focus .portfolio-overlay {
+  transform: translateY(0%);
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.card-title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #4D5AE5;
+  margin: 8px auto 0;
 }
 .footer-logo{
     font-family: 'Raleway',sans-serif;
@@ -340,4 +468,37 @@ header{
     letter-spacing: 0.02em;
     font-size: 16px;  
     max-width: 264px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 16px;
+}
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin:0;
+  line-height: 24px;
+  font-family: "Roboto",sans-serif;
+  letter-spacing: 0.02em;
+}
+.social-icon-block {
+  display: flex;
+  gap: 1px;
+  width: 180px; 
+  height: 80px;
+}
+.social-icon-block svg {
+  fill: rgb(16, 15, 15);
+  height: 40%;
+}
+.feature-item svg {
+  fill: rgb(163, 159, 159);
+  width: 70%;
+  height: 70%;
+  border:1px solid black;
+  background-color: rgb(240, 240, 243);
 }
