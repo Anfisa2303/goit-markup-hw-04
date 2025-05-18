@@ -250,6 +250,7 @@ header{
   margin: 0 auto 8px;
 }
 .feature-title{
+    display: flex;
     color: #2E2F42;
     font-size:20px;
     font-family:'Roboto',sans-serif ; 
@@ -286,6 +287,7 @@ header{
   
 }
 .feature-text{
+    display: flex;
     font-family:"Roboto",sans-serif ;
     font-weight: 400;
     font-size: 16px;
