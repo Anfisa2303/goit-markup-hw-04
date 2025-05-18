@@ -152,7 +152,7 @@ header{
     justify-content: center;
     gap: 24px;
     height: 600px;
-    max-width:1146px; 
+    max-width:1140px; 
     position: relative;
     background-image: linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)), 
     url('../images/people-office.jpg');
@@ -493,10 +493,10 @@ header{
   font-weight: 500;
   font-size: 16px;
   color: #FFFFFF;
-  margin:0;
   line-height: 24px;
   font-family: "Roboto",sans-serif;
   letter-spacing: 0.02em;
+  margin-bottom: 16px; 
 }
  
 .feature-item svg {
@@ -525,4 +525,8 @@ header{
 }
 .social-icon {
   fill: #f4f4fd;
+}
+.social-icons-list {
+    display: flex;
+    gap: 16px;
 }
