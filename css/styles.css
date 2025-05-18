@@ -33,6 +33,7 @@ img{
 header{
  border-bottom: 1px solid#e7e9fc ;
  background-color: #FFFFFF;
+ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container{
     display: flex;
@@ -61,6 +62,7 @@ header{
     padding-bottom:24px;
     gap: 40px;
     display: block;
+    transition:color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 .nav-link:hover,
 .nav-link:focus{
@@ -99,6 +101,7 @@ header{
 }
 .contact-link{
     color: #434455;
+    transition:color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 .contact-address{
     font-family:'Roboto',sans-serif;
@@ -149,7 +152,7 @@ header{
     justify-content: center;
     gap: 24px;
     height: 600px;
-    width: 1146px;
+    max-width:1146px; 
     position: relative;
     background-image: linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)), 
     url('../images/people-office.jpg');
@@ -189,6 +192,7 @@ header{
          border-radius: 4px;
          text-align: center;
          line-height: 1.5;
+         transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
         }
  .order-service-btn:hover,
 .order-service-btn:focus{
@@ -207,14 +211,15 @@ header{
 .btn,
 .card,
 .team-member-card {
-  transition: 
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+ }
 .team-info{
     text-align: center;
     padding: 32px 0;
+}
+.team-info svg{
+    width: 16px;
+    height: 16px;
 }
 .feature-list{
  display: flex;
@@ -258,7 +263,7 @@ header{
 .social-icons {
   display: flex;
   justify-content: center; 
-  gap: 16px;               
+  gap: 24px;               
   margin-top: 12px;
 }
 
@@ -321,8 +326,7 @@ header{
     justify-content: center;
     padding: 0;
     list-style: none;
-    
-}
+ }
 .team-card{
     display: flex;
     justify-content: center;
@@ -379,10 +383,10 @@ header{
     background-color: #FFFFFF;
     width: calc((100% - 48px) / 3); 
     box-sizing: border-box;
-    transition:box-shadow 0.3s ease-in-out;
+    transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover{
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 .portfolio-title{
   margin-bottom: 72px;
@@ -412,19 +416,19 @@ header{
 
 .portfolio-overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(77, 90, 229, 0.9); 
+  background-color: #4d5ae5; 
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  text-align: center;
-  color: #ffffff;
+  padding: 40px 32px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color:var(--text-light, #f4f4fd);
 }
 
 .portfolio-link:hover .portfolio-overlay,
@@ -435,6 +439,13 @@ header{
 .portfolio-text {
   font-size: 16px;
   line-height: 1.5;
+}
+.portfolio-text:hover{
+    transform: translateY(0%);
+}
+.portfolio-thumb:hover .portfolio-overlay,
+.portfolio-item:hover .portfolio-overlay {
+  transform: translateY(0%);
 }
 .card-title::after {
   content: "";
@@ -485,20 +496,31 @@ header{
   font-family: "Roboto",sans-serif;
   letter-spacing: 0.02em;
 }
-.social-icon-block {
-  display: flex;
-  gap: 1px;
-  width: 180px; 
-  height: 80px;
-}
-.social-icon-block svg {
-  fill: rgb(16, 15, 15);
-  height: 40%;
-}
+ 
 .feature-item svg {
   fill: rgb(163, 159, 159);
   width: 70%;
   height: 70%;
   border:1px solid black;
   background-color: rgb(240, 240, 243);
+}
+.icon-box{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px; 
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-logo-block {
+  margin-right: 120px;
+}
+.social-icon {
+  fill: #f4f4fd;
 }
