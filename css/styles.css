@@ -81,6 +81,7 @@ header{
 .nav-link.current{
     position: relative;
     color: #404BBF;
+    text-decoration: none;
 }
 .nav-link.current::after {
   content: '';
@@ -102,6 +103,7 @@ header{
 .contact-link{
     color: #434455;
     transition:color 250ms cubic-bezier(0.4,0,0.2,1);
+    text-decoration: none;
 }
 .contact-address{
     font-family:'Roboto',sans-serif;
@@ -165,6 +167,7 @@ header{
     background-color: #2E2F42B2;
     text-align: center;  
     max-width: 1440px;
+    margin: 0 auto;
 }
     main section{
         color: black; 
@@ -269,8 +272,7 @@ header{
   justify-content: center; 
   gap: 24px;  
   padding: 0;             
-  margin-top: 16px;
-}
+ }
 .social-item{
     width: 40px;
     height: 40px;
@@ -289,9 +291,7 @@ header{
 .social-link:focus {
   background-color: #404bbf;
 }
-.social-icon {
-  fill: #f4f4fd;
-}
+
 .social-link-media {
   display: flex;
   align-items: center;
@@ -302,17 +302,12 @@ header{
   height: 100%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link-media:hover,
-.social-link-media:focus{
-    background-color: #404bbf;
-}
+
 .social-link-media:hover,
 .social-link-media:focus{
     background-color: #31d0aa; 
 }
-.social-icon {
-  fill: var(--icon-color, #f4f4fd);
-}
+
 .social-lists{
   display: flex;
   justify-content: center;
@@ -472,14 +467,7 @@ header{
   font-size: 16px;
   line-height: 1.5;
  }
-.card-title::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 2px;
-  background-color: #4D5AE5;
-  margin: 8px auto 0;
-}
+
 .footer-logo{
     font-family: 'Raleway',sans-serif;
     font-size: 18px;
@@ -546,9 +534,7 @@ header{
 .footer-logo-block {
   margin-right: 120px;
 }
-.social-icon {
-  fill: #f4f4fd;
-}
+
 .social-icons-list {
     display: flex;
     gap: 16px;
@@ -557,7 +543,7 @@ header{
     list-style: none;
     justify-content: center;
 }
-.social-link{
+.social-link {
   display: flex;
   align-items: center;
   justify-content: center;
