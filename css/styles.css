@@ -239,6 +239,7 @@ header{
     gap: 24px;
     width: calc((100% - 72px) / 4 );
     box-sizing: border-box;
+    border: 1px;
 } 
 .feature-icon{
    width: 64px;
@@ -251,9 +252,10 @@ header{
   align-items: center;
   background-color: #f4f4fd;
   border-radius: 4px;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 8px;
+  width: 264px;
+  height: 112px;
+  margin: 0 auto;
+  border: 1px solid #8E8F99;
 }
 .feature-title{
     display: flex;
@@ -513,23 +515,7 @@ header{
   margin-bottom: 16px; 
 }
  
-.feature-item svg {
-  fill: rgb(163, 159, 159);
-  width: 70%;
-  height: 70%;
-  border:1px solid black;
-  background-color: rgb(240, 240, 243);
-}
-.icon-box{
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    border: 1px solid #8e8f99;
-    margin-bottom: 8px; 
-}
+
 .footer-container {
   display: flex;
   align-items: baseline;
