@@ -255,6 +255,7 @@ header{
   width: 264px;
   height: 112px;
   margin: 0 auto;
+  margin-bottom: 8px;
   border: 1px solid #8E8F99;
 }
 .feature-title{
@@ -521,7 +522,7 @@ header{
   align-items: baseline;
 }
 .footer-logo-block {
- margin: 120px;
+ margin-right: 120px;
 }
 
 .social-icons-list {
