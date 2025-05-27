@@ -525,10 +525,10 @@ header{
   letter-spacing: 0.02em;
   margin-bottom: 16px; 
  }
-.footer-container {
-  display: flex;
-  align-items: baseline;
- }
+.footer-container{
+    display: flex;
+    align-items: baseline;
+}
 .footer-logo-block {
  margin-right: 120px;
 }
