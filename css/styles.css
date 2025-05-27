@@ -25,7 +25,7 @@ img{
     max-width: 100%;
 }
 .container{
-    max-width: 1158px; 
+    max-width: 1140px; 
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -144,7 +144,7 @@ header{
     display: flex;
  }
  .container {
-  max-width: 1440px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -392,21 +392,31 @@ header{
     color: #434455;
     text-align:center;
 }  
-.card-title{
+.team-title{
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.02em;
     color: #2e2f42;
     line-height: 1.2;
     margin-bottom: 8px;
-    text-align: left;
+    text-align: center;
+    
 }
 .card-text{
     font-size: 16px;
     letter-spacing: 0.02em;
      color: #434455;
      line-height: 1.5;
-     text-align: left;
+     text-align: center;
+}
+.card-title{
+   font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    text-align: left; 
 }
 .portfolio-section{
     padding-top: 120px;
@@ -434,7 +444,7 @@ header{
   margin-bottom: 72px;
   font-size: 36px;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
 }
 .portfolio-caption{
     padding: 32px 16px;
@@ -514,13 +524,10 @@ header{
   font-family: "Roboto",sans-serif;
   letter-spacing: 0.02em;
   margin-bottom: 16px; 
-}
- 
-
+ }
 .footer-container {
   display: flex;
-  align-items: baseline;
-}
+ }
 .footer-logo-block {
  margin-right: 120px;
 }
