@@ -527,13 +527,14 @@ header{
 .footer-container{
     display: flex;
     align-items: baseline;
-    margin-right: 120px;
+    
  }
 .footer-logo-block {
  margin-right: 120px;
 }
 .footer-text-container {
     margin-left: 156px;
+    margin-right: 120px;
 }
 
 .social-icons-list {
