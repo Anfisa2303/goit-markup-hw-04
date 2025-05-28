@@ -527,7 +527,7 @@ header{
 .footer-container{
     display: flex;
     align-items: baseline;
-    align-items: center;
+    margin-right: 120px;
    
 }
 .footer-logo-block {
