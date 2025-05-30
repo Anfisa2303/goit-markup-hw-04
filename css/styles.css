@@ -529,8 +529,8 @@ header{
  }
 
 .footer-text-container {
-    margin-left: 156px;
     margin-right: 120px;
+    padding-left: 156px;
 }
 
 .social-icons-list {
