@@ -233,7 +233,7 @@ header{
  list-style: none;
 }
 .feature-item{
-    display: flex;
+    
     margin: 8px;
     padding: 8px;
     width: calc((100% - 72px) / 4 );
