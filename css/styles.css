@@ -161,7 +161,7 @@ header{
     background-size: cover;
     background-color: #2E2F42B2;
     text-align: center;  
-    /*max-width: 1440px;*/
+    max-width: 1440px;
     margin: 0 auto;
 }
     main section{
@@ -217,7 +217,7 @@ header{
  }
 .team-info{
     text-align: center;
-    margin: 32px 16px;
+    padding: 32px 0;
     color: #FFFFFF;
 }
 .team-info svg{
@@ -532,6 +532,7 @@ header{
 
 .footer-text-container {
     margin-right: 120px;
+    padding-left: 156px;
 }
 
 .social-icons-list {
