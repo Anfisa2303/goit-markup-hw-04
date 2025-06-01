@@ -205,21 +205,9 @@ header{
     padding:120px 0;
     background-color: #F4F4FD;
 }
-.team-member-card{
-    background-color: #FFFFFF;
-    gap: 24px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-              0px 1px 1px rgba(46, 47, 66, 0.16),
-              0px 2px 1px rgba(46, 47, 66, 0.08);
-               text-align: center;
-              padding: 32px 0;
-              overflow: hidden;
-    transition: box-shadow 0.3s ease-in-out;
- }
+
 .team-info{
-    text-align: center;
     padding: 32px 0;
-    color: #FFFFFF;
 }
 .team-info svg{
     width: 16px;
@@ -375,6 +363,7 @@ header{
     box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     color: #FFFFFF;
+    background: #fff;
 }
 .team-position{
     font-family: "Roboto",sans-serif;
@@ -523,7 +512,7 @@ header{
 .footer-container{
     display: flex;
     align-items: baseline;
- }
+  }
 
 .footer-text-container {
     margin-right: 120px;
@@ -536,7 +525,7 @@ header{
     margin: 0;
     list-style: none;
     justify-content: center;
-    margin-top: -16px;
+    /*margin-top: -16px;*/
 }
 .social-link {
   display: flex;
